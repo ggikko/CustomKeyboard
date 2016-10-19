@@ -1,3 +1,48 @@
 <resources>
     <string name="app_name">CustomKeyboardApp</string>
+
+    <!--first row-->
+    <string name="key_shift_1"><![CDATA[!]]></string>
+    <string name="key_shift_2"><![CDATA[\@]]></string>
+    <string name="key_shift_3"><![CDATA[#]]></string>
+    <string name="key_shift_4"><![CDATA[$]]></string>
+    <string name="key_shift_5"><![CDATA[%]]></string>
+    <string name="key_shift_6"><![CDATA[^]]></string>
+    <string name="key_shift_7"><![CDATA[&]]></string>
+    <string name="key_shift_8"><![CDATA[*]]></string>
+    <string name="key_shift_9"><![CDATA[(]]></string>
+    <string name="key_shift_0"><![CDATA[)]]></string>
+
+    <!--second row-->
+    <string name="key_shift_q"><![CDATA[-]]></string>
+    <string name="key_shift_w"><![CDATA[=]]></string>
+    <string name="key_shift_e"><![CDATA[+]]></string>
+    <string name="key_shift_r"><![CDATA[{]]></string>
+    <string name="key_shift_t"><![CDATA[}]]></string>
+    <string name="key_shift_y"><![CDATA[[]]></string>
+    <string name="key_shift_u"><![CDATA[]]]></string>
+    <string name="key_shift_i"><![CDATA[\\]]></string>
+    <string name="key_shift_o"><![CDATA[:]]></string>
+    <string name="key_shift_p"><![CDATA[;]]></string>
+
+    <!--third row-->
+    <string name="key_shift_a"><![CDATA[\"]]></string>
+    <string name="key_shift_s"><![CDATA[\']]></string>
+    <string name="key_shift_d"><![CDATA[<]]></string>
+    <string name="key_shift_f"><![CDATA[>]]></string>
+    <string name="key_shift_g"><![CDATA[,]]></string>
+    <string name="key_shift_h"><![CDATA[.]]></string>
+    <string name="key_shift_j"><![CDATA[/]]></string>
+    <string name="key_shift_k"><![CDATA[\?]]></string>
+    <string name="key_shift_l"><![CDATA[|]]></string>
+
+    <!--fourth row-->
+    <string name="key_shift_z"><![CDATA[~]]></string>
+    <string name="key_shift_x"><![CDATA[`]]></string>
+    <string name="key_shift_c"><![CDATA[_]]></string>
+    <string name="key_shift_v"><![CDATA[$]]></string>
+    <string name="key_shift_b"><![CDATA[#]]></string>
+    <string name="key_shift_n"><![CDATA[\@]]></string>
+    <string name="key_shift_m"><![CDATA[!]]></string>
+
 </resources>

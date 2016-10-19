@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="customKeyButtonView">
+        <attr name="main_text" format="string"/>
+        <attr name="sub_text" format="string"/>
+        <attr name="main_second_text" format="string"/>
+        <attr name="sub_second_text" format="string"/>
+        <attr name="special_character" format="string"/>
+    </declare-styleable>
+</resources>

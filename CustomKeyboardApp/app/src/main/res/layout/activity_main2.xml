@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ggikko.me.customkeyboardapp.MainActivity">
+
+    <TextView
+        android:id="@+id/typing"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="Typing"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/keyboardWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="284dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/firstRowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadNum1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:special_character="@string/key_shift_1"
+                app:main_text="1"
+                app:main_second_text="@string/key_shift_1"
+                android:gravity="center" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadNum2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_2"
+                app:main_text="2"
+                app:main_second_text="@string/key_shift_2"/>
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadNum3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_3"
+                app:main_text="3"
+                app:main_second_text="@string/key_shift_3" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadNum4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_4"
+                app:main_text="4"
+                app:main_second_text="@string/key_shift_4" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadNum5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_5"
+                app:main_text="5"
+                app:main_second_text="@string/key_shift_5" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadNum6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_6"
+                app:main_text="6"
+                app:main_second_text="@string/key_shift_6" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadNum7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_7"
+                app:main_text="7"
+                app:main_second_text="@string/key_shift_7" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadNum8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_8"
+                app:main_text="8"
+                app:main_second_text="@string/key_shift_8" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadNum9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_9"
+                app:main_text="9"
+                app:main_second_text="@string/key_shift_9" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadNum0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_0"
+                app:main_text="0"
+                app:main_second_text="@string/key_shift_0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondRowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterQ"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_q"
+                app:main_text="q"
+                app:sub_text="ㅂ"
+                app:main_second_text="Q"
+                app:sub_second_text="ㅃ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterW"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_w"
+                app:main_text="w"
+                app:sub_text="ㅈ"
+                app:main_second_text="W"
+                app:sub_second_text="ㅉ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterE"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_e"
+                app:main_text="e"
+                app:sub_text="ㄷ"
+                app:main_second_text="E"
+                app:sub_second_text="ㄸ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterR"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_r"
+                app:main_text="r"
+                app:sub_text="ㄱ"
+                app:main_second_text="R"
+                app:sub_second_text="ㄲ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterT"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_t"
+                app:main_text="t"
+                app:sub_text="ㅅ"
+                app:main_second_text="T"
+                app:sub_second_text="ㅆ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterY"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_y"
+                app:main_text="y"
+                app:sub_text="ㅛ"
+                app:main_second_text="Y"
+                app:sub_second_text="ㅛ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterU"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_u"
+                app:main_text="u"
+                app:sub_text="ㅕ"
+                app:main_second_text="U"
+                app:sub_second_text="ㅕ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterI"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_i"
+                app:main_text="i"
+                app:sub_text="ㅑ"
+                app:main_second_text="I"
+                app:sub_second_text="ㅑ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterO"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_o"
+                app:main_text="o"
+                app:sub_text="ㅐ"
+                app:main_second_text="O"
+                app:sub_second_text="ㅒ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterP"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_p"
+                app:main_text="p"
+                app:sub_text="ㅔ"
+                app:main_second_text="P"
+                app:sub_second_text="ㅖ" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_a"
+                app:main_text="a"
+                app:sub_text="ㅁ"
+                app:main_second_text="A"
+                app:sub_second_text="ㅁ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterS"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_s"
+                app:main_text="s"
+                app:sub_text="ㄴ"
+                app:main_second_text="S"
+                app:sub_second_text="ㄴ"/>
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_d"
+                app:main_text="d"
+                app:sub_text="ㅇ"
+                app:main_second_text="D"
+                app:sub_second_text="ㅇ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterF"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_f"
+                app:main_text="f"
+                app:sub_text="ㄹ"
+                app:main_second_text="F"
+                app:sub_second_text="ㄹ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterH"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_g"
+                app:main_text="g"
+                app:sub_text="ㅎ"
+                app:main_second_text="G"
+                app:sub_second_text="ㅎ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterJ"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_h"
+                app:main_text="h"
+                app:sub_text="ㅗ"
+                app:main_second_text="H"
+                app:sub_second_text="ㅗ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterK"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_j"
+                app:main_text="j"
+                app:sub_text="ㅓ"
+                app:main_second_text="J"
+                app:sub_second_text="ㅓ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterG"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_k"
+                app:main_text="k"
+                app:sub_text="ㅏ"
+                app:main_second_text="K"
+                app:sub_second_text="ㅏ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_l"
+                app:main_text="l"
+                app:sub_text="ㅣ"
+                app:main_second_text="L"
+                app:sub_second_text="ㅣ" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/keypadShift"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Spec" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterZ"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_z"
+                app:main_text="z"
+                app:sub_text="ㅋ"
+                app:main_second_text="Z"
+                app:sub_second_text="ㅋ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterX"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_x"
+                app:main_text="x"
+                app:sub_text="ㅌ"
+                app:main_second_text="X"
+                app:sub_second_text="ㅌ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_c"
+                app:main_text="c"
+                app:sub_text="ㅊ"
+                app:main_second_text="C"
+                app:sub_second_text="ㅊ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_v"
+                app:main_text="v"
+                app:sub_text="ㅍ"
+                app:main_second_text="V"
+                app:sub_second_text="ㅍ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_b"
+                app:main_text="b"
+                app:sub_text="ㅠ"
+                app:main_second_text="B"
+                app:sub_second_text="ㅠ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterN"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_n"
+                app:main_text="n"
+                app:sub_text="ㅜ"
+                app:main_second_text="N"
+                app:sub_second_text="ㅜ" />
+
+            <ggikko.me.customkeyboardapp.widget.CustomKeyButtonView
+                android:id="@+id/keypadCharacterM"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:special_character="@string/key_shift_m"
+                app:main_text="m"
+                app:sub_text="ㅡ"
+                app:main_second_text="M"
+                app:sub_second_text="ㅡ" />
+
+            <TextView
+                android:id="@+id/keypadBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="back" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/keypadSpecialCharacter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="특수" />
+
+            <TextView
+                android:id="@+id/keypadSpace"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="space"/>
+
+            <TextView
+                android:id="@+id/keypadComplete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="입력완료" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
